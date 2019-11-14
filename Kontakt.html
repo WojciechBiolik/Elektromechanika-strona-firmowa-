@@ -20,6 +20,7 @@
         </ul>
     </nav>
     <main class="main">
+        <section class="overTop"></section>
         <section class="top"></section>
         <section class="contact">
 
@@ -43,10 +44,29 @@
         </section>
 
 
-
         <iframe id="map" class="map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2551.0142641222965!2d19.011941815724295!3d50.25431787944879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716ce45d879a053%3A0xe98df8550a812d2f!2s%C5%BBwirki%20i%20Wigury%2015%2C%2040-061%20Katowice!5e0!3m2!1spl!2spl!4v1573564734557!5m2!1spl!2spl"
             allowfullscreen=""></iframe>
+        </section>
+        <section class="contactFormular" id="contactFormular">
+            <div class="toMiddle">
+                <h1 class="contactFormular__header">Formularz kontaktowy</h1>
+                <p class="contactFormular__description">Jeżeli chcesz się z nami skontaktować, możesz również wypełnić
+                    poniższy formularz kontaktowy</p>
+                <div class="contactFormular__field">
+                    <form>
+                        <input type="text" maxlength="20" placeholder="Imię">
+                        <input type="text" maxlength="50" placeholder="Nazwisko">
+                        <input type="email" maxlength="50" placeholder="e-mail">
+                        <input type="tel" maxlength="30" placeholder="Numer telefonu">
+                        <textarea maxlength="1000" placeholder="Informacje dodatkowe"></textarea>
+                        <button type="button"
+                            class="contactFormular__button contactFormular__button--submit">Wyślij</button>
+                        <button type="button"
+                            class="contactFormular__button contactFormular__button--cancel">Anuluj</button>
+                    </form>
+                </div>
+            </div>
         </section>
         <footer class="footer">
             <a href="#top" class="footer__toTop">Na górę</a>
