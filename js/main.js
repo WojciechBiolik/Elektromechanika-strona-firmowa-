@@ -1,6 +1,7 @@
-const header = document.querySelector('.about__paragraph--js');
-console.log("Helo");
-console.log(header);
-header.innerHTML = "hahahahah";
-console.log(header);
-console.log(header.innerHTML);
+const navigationSwitcher = document.querySelector('.navigation__switcher--js');
+
+navigationSwitcher.addEventListener('click', (e) => {
+    const navigationList = document.querySelector('.navigation__list--js');
+    navigationList.classList.toggle('navigation__list--visible');
+
+});

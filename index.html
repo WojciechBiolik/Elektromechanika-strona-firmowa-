@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
-<script src="js/main.js"></script>
+
 
 <head>
     <meta charset="UTF-8">
@@ -12,15 +12,19 @@
 </head>
 
 <body>
-    <nav id="navigation">
-        <ul class="navigation__list">
-            <li class="navigation__item"><a href="index.html">Strona główna</a></li>
-            <li class="navigation__item"><a href="O_nas.html">O firmie</a></li>
-            <li class="navigation__item"><a href="Referencje.html">Referencje</a></li>
-            <li class="navigation__item"><a href="Galeria.html">Galeria</a></li>
-            <li class="navigation__item"><a href="Kontakt.html">Kontakt</a></li>
-        </ul>
-    </nav>
+    <header class="site-header">
+        <nav class="navigation">
+            <ul class="navigation__list navigation__list--js">
+                <li class="navigation__item"><a href="index.html">Strona główna</a></li>
+                <li class="navigation__item"><a href="O_nas.html">O firmie</a></li>
+                <li class="navigation__item"><a href="Referencje.html">Referencje</a></li>
+                <li class="navigation__item"><a href="Galeria.html">Galeria</a></li>
+                <li class="navigation__item"><a href="Kontakt.html">Kontakt</a></li>
+            </ul>
+
+        </nav>
+        <button class="navigation__switcher navigation__switcher--js" aria-label="Open the menu">&#x2630;</button>
+    </header>
     <main class="main">
         <section class="overTop"></section>
         <section class="top"></section>
@@ -38,5 +42,6 @@
         </footer>
     </main>
 </body>
+<script src="js/main.js"></script>
 
 </html>
