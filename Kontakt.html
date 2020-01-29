@@ -60,23 +60,27 @@
                 <p class="contactFormular__description">Jeżeli chcesz się z nami skontaktować, możesz również wypełnić
                     poniższy formularz kontaktowy</p>
                 <div class="contactFormular__field">
-                    <form>
-                        <input type="text" required maxlength="100" placeholder="Nazwa firmy/podmiotu (opcjonalnie)"
-                            class="contactFormular__field--line"><br />
-                        <input type="text" required maxlength="20" placeholder="Imię"
-                            class="contactFormular__field--half">
-                        <input type="text" required maxlength="50" placeholder="Nazwisko"
-                            class="contactFormular__field--half">
-                        <input type="email" required maxlength="50" placeholder="e-mail"
-                            class="contactFormular__field--half">
-                        <input type="tel" maxlength="30" placeholder="Numer telefonu"
-                            class="contactFormular__field--half">
-                        <textarea required maxlength="1000" placeholder="Informacje dodatkowe"
-                            class="contactFormular__field--area"></textarea>
-                        <button type="button"
-                            class="contactFormular__button contactFormular__button--submit">Wyślij</button>
-                        <button type="button"
-                            class="contactFormular__button contactFormular__button--cancel">Anuluj</button>
+                    <form class="form">
+                        <fieldset>
+                            <legend>Formularz kontaktowy</legend>
+                            <input type="text" required maxlength="100" placeholder="Nazwa firmy/podmiotu (opcjonalnie)"
+                                class="contactFormular__field--line" id="companyName"><br />
+                            <input type="text" required maxlength="20" placeholder="Imię"
+                                class="contactFormular__field--half" id="name" name="name">
+                            <input type="text" required maxlength="50" placeholder="Nazwisko"
+                                class="contactFormular__field--half" id="surname" name="mySurname">
+                            <input type="email" required maxlength="50" placeholder="e-mail"
+                                class="contactFormular__field--half" id="mail" name="mail">
+                            <input type="tel" maxlength="30" placeholder="Numer telefonu"
+                                class="contactFormular__field--half" id="phoneNumber" name="phoneNumber">
+                            <textarea required maxlength="1000" placeholder="Informacje dodatkowe"
+                                class="contactFormular__field--area" id="additionalInfo"
+                                name="additionalInfo"></textarea>
+                            <input type="submit" class="contactFormular__button contactFormular__button--submit"
+                                value="Prześlij formularz zgłoszeniowy">
+                            <button type="button"
+                                class="contactFormular__button contactFormular__button--cancel">Anuluj</button>
+                        </fieldset>
                     </form>
                 </div>
             </div>
